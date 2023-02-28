@@ -4,7 +4,8 @@
     <div class="contai">
         <div class="job_container">
             <h1>UPDATE RECRUITER PROFILE</h1><br>
-            <form>
+            <form action="{{ route('updateprofile.update',$profile->id) }}" method="post" enctype="multipart/form-data">
+                @csrf
                 <p>E-mail: </p> <input type="email" name="email" placeholder="email" value="{{ $profile->user->email }}"><br><br>
                 <p>Company Name: </p><input type="text" name="company_name" placeholder="Buddha" value="{{ $profile->company_name }}"><br><br>
                 <p>Location: </p> <input type="text" name="location" placeholder="company location" value="{{$profile->location}}"><br><br>

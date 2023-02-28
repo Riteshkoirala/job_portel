@@ -12,6 +12,15 @@ class RecruiterProfile extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+      'company_name',
+      'user_id',
+      'location',
+      'image',
+      'detail',
+      'contact_number',
+    ];
+
     public function user():BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -21,5 +30,6 @@ class RecruiterProfile extends Model
     {
         return $this->hasMany(JobPosts::class);
     }
+
 
 }

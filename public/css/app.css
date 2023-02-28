@@ -419,4 +419,12 @@ a{
 .job_container .type{
     width: 250px;
 }
+.profile{
+    background-color: red;
+    padding: 20px;
+    position: relative;
+    margin: 200px;
+    border-radius: 20px;
+    color: white;
+}
 

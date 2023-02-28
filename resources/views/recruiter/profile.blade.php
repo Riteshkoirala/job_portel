@@ -4,6 +4,7 @@
     <div class="bodys">
         <div class="img">
             <div class="imgs">
+                <img class="imgs" src="{{asset('/images/recruiter/'.$profile->image)}}" alt="Company Image">
 
             </div>
             <div class="profil">
@@ -21,6 +22,5 @@
 
     </div>
         <a class="update" href="{{ route('rprofile.edit', $profile->id) }}">Update Profile</a>
-
 @endsection
 

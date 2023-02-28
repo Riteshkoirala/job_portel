@@ -36,6 +36,7 @@ Route::resource('/rprofile', RecruiterProfileController::class);
 Route::resource('/addjob', JobPostsController::class);
 Route::resource('/dashboard', PostController::class);
 Route::post('/updatejob/{id}', [JobPostsController::class,'update'])->name('updatejob.update');
+Route::post('/updateprofile/{id}', [RecruiterProfileController::class,'update'])->name('updateprofile.update');
 
 Route::get('/job/{id}', [PostController::class,'show'])->name('job.show');
 
